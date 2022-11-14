@@ -12,7 +12,7 @@ import static com.tngtech.archunit.library.Architectures.layeredArchitecture;
 public class LayeredArchitectureTest {
     @ArchTest
     static final ArchRule layer_dependencies_are_respected = layeredArchitecture()
-
+            .consideringOnlyDependenciesInLayers()
             .layer("Controllers").definedBy("com.tngtech.archunit.example.layers.controller..")
             .layer("Services").definedBy("com.tngtech.archunit.example.layers.service..")
             .layer("Persistence").definedBy("com.tngtech.archunit.example.layers.persistence..")
@@ -23,7 +23,7 @@ public class LayeredArchitectureTest {
 
     @ArchTest
     static final ArchRule layer_dependencies_are_respected_with_exception = layeredArchitecture()
-
+            .consideringOnlyDependenciesInLayers()
             .layer("Controllers").definedBy("com.tngtech.archunit.example.layers.controller..")
             .layer("Services").definedBy("com.tngtech.archunit.example.layers.service..")
             .layer("Persistence").definedBy("com.tngtech.archunit.example.layers.persistence..")

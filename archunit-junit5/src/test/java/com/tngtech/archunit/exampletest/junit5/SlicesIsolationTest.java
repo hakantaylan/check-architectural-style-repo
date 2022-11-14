@@ -34,10 +34,11 @@ public class SlicesIsolationTest {
                     .ignoreDependency(nameMatching(".*controller\\.three.*"), alwaysTrue());
 
     private static DescribedPredicate<Slice> containDescription(final String descriptionPart) {
-        return new DescribedPredicate<Slice>("contain description '%s'", descriptionPart) {
+        return new DescribedPredicate<>("contain description '%s'", descriptionPart) {
             @Override
-            public boolean apply(Slice input) {
-                return input.getDescription().contains(descriptionPart);
+            public boolean test(Slice input) {
+                boolean contains = input.getDescription().contains(descriptionPart);
+                return contains;
             }
         };
     }

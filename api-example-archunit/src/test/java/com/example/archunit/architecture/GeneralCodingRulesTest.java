@@ -44,6 +44,7 @@ class GeneralCodingRulesTest {
             .andShould().beStatic()
             .andShould().beFinal()
             .andShould().haveName("LOGGER")
+            .allowEmptyShould(true)
             .because("Logger variables should be private, static and final, and it should be named as LOGGER");
 
     
@@ -52,11 +53,13 @@ class GeneralCodingRulesTest {
             .and().doNotHaveName("serialVersionUID")
             .and().doNotHaveModifier(JavaModifier.SYNTHETIC)
             .should().haveNameMatching(".*^[A-Z].*")
+            .allowEmptyShould(true)
             .because("Variables with static and final modifiers should be named in uppercase");
     
     //Methods
     @ArchTest
     static final ArchRule beanMethodsShouldBePublic = methods().that().areAnnotatedWith(Bean.class).should().bePublic()
+            .allowEmptyShould(true)
             .because("@Bean annotation does not work in non public methods");
 
 
