@@ -1,7 +1,7 @@
 package com.tngtech.archunit.example.layers.persistence.first.dao;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
 
 // Violates Rule that Entities must reside in a package 'domain'
 @Entity

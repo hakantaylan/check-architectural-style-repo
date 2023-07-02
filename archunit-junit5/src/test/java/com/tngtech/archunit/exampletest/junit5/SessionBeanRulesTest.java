@@ -54,7 +54,7 @@ public class SessionBeanRulesTest {
     }
 
     private static DescribedPredicate<JavaAccess<?>> originNeitherConstructorNorPostConstruct() {
-        return Get.origin().is(not(constructor()).and(not(annotatedWith("javax.annotation.PostConstruct"))));
+        return Get.origin().is(not(constructor()).and(not(annotatedWith("jakarta.annotation.PostConstruct"))));
     }
 
     private static DescribedPredicate<JavaClass> haveLocalBeanSubclass() {

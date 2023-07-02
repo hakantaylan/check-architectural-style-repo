@@ -1,7 +1,7 @@
 package com.tngtech.archunit.example.layers.persistence.first.dao.jpa;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 
 import com.tngtech.archunit.example.layers.persistence.first.dao.SomeDao;
 import com.tngtech.archunit.example.layers.persistence.first.dao.domain.PersistentObject;

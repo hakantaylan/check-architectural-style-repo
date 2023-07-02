@@ -3,8 +3,8 @@ package com.tngtech.archunit.example.layers.persistence.second.dao.jpa;
 import java.sql.Connection;
 import java.sql.SQLException;
 
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.PersistenceContext;
 
 import com.tngtech.archunit.example.layers.persistence.second.dao.OtherDao;
 import com.tngtech.archunit.example.layers.persistence.second.dao.domain.OtherPersistentObject;

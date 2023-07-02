@@ -2,7 +2,7 @@ package com.tngtech.archunit.example.layers.persistence.second.dao;
 
 import java.sql.SQLException;
 
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 
 import com.tngtech.archunit.example.layers.persistence.second.dao.domain.OtherPersistentObject;
 

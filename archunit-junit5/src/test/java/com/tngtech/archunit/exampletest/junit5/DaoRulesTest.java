@@ -2,8 +2,8 @@ package com.tngtech.archunit.exampletest.junit5;
 
 import java.sql.SQLException;
 
-import javax.persistence.Entity;
-import javax.persistence.EntityManager;
+import jakarta.persistence.Entity;
+import jakarta.persistence.EntityManager;
 
 import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;

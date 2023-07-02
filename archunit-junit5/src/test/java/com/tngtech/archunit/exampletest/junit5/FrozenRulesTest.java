@@ -1,6 +1,6 @@
 package com.tngtech.archunit.exampletest.junit5;
 
-import javax.persistence.EntityManager;
+import jakarta.persistence.EntityManager;
 
 import com.tngtech.archunit.ArchConfiguration;
 import com.tngtech.archunit.junit.AnalyzeClasses;

@@ -1,6 +1,6 @@
 package com.tngtech.archunit.example.layers;
 
-import javax.annotation.PostConstruct;
+import jakarta.annotation.PostConstruct;
 import javax.ejb.Local;
 import javax.ejb.Stateless;
 

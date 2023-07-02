@@ -1,4 +1,4 @@
 #
 #Mon Nov 14 12:56:49 TRT 2022
 no\ classes\ should\ depend\ on\ classes\ that\ reside\ in\ a\ package\ '..service..'=d14d7c25-941e-46e9-8b0f-f47083a68828
-no\ classes\ should\ depend\ on\ classes\ that\ are\ assignable\ to\ javax.persistence.EntityManager=91c295c5-bfda-4faa-a431-fada118f3f30
+no\ classes\ should\ depend\ on\ classes\ that\ are\ assignable\ to\ jakarta.persistence.EntityManager=91c295c5-bfda-4faa-a431-fada118f3f30
