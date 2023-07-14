@@ -2,6 +2,7 @@ package com.example.archunit;
 
 import com.example.archunit.persistence.IPersistenceSession;
 import com.example.archunit.persistence.PersistenceSession;
+import com.tngtech.archunit.core.importer.ImportOption;
 import com.tngtech.archunit.junit.AnalyzeClasses;
 import com.tngtech.archunit.junit.ArchTest;
 import com.tngtech.archunit.lang.ArchRule;
@@ -17,7 +18,14 @@ import static com.tngtech.archunit.core.domain.properties.HasParameterTypes.Pred
 import static com.tngtech.archunit.lang.conditions.ArchPredicates.have;
 import static com.tngtech.archunit.lang.syntax.ArchRuleDefinition.codeUnits;
 
-@AnalyzeClasses(packages = "com.example.archunit")
+@AnalyzeClasses(
+        packages = "com.example.archunit",
+//        packagesOf = MyApplication.class,
+        importOptions = {
+                ImportOption.DoNotIncludeArchives.class,
+                ImportOption.DoNotIncludeJars.class,
+                ImportOption.DoNotIncludeTests.class
+        })
 public class PersistenceSessionTest {
 
     private static List<String> ignoredFileList = new LinkedList<>();
