@@ -4,9 +4,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.tngtech.archunit.example</groupId>
-	<artifactId>api-example-archunit</artifactId>
+	<artifactId>archunit-junit5</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>api-example-archunit</name>
+	<name>archunit-junit5</name>
 	<description>Example of the use of Archunit</description>
 
 	<parent>
